@@ -5,14 +5,14 @@ name: 뉴스속보수집
 on:
   # 특정 시간이 될때마다 실행하라
   # cron표현식
-  schedule :
-    - cron : "10 * * * *"
+  # schedule :
+  #   - cron : "10 * * * *"
 
 #어떤 조건일때 파일을 실행
-  # push:
-  #   branches: ["main"]
-  # pull_request:
-  #   branches: ["main"]
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
   build:
