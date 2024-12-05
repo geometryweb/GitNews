@@ -3,10 +3,16 @@ name: 뉴스속보수집
 
 # 워크플로우를 실행하는 조건
 on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]
+  # 특정 시간이 될때마다 실행하라
+  # cron표현식
+  schedule :
+    - cron : "10 * * * *"
+
+#어떤 조건일때 파일을 실행
+  # push:
+  #   branches: ["main"]
+  # pull_request:
+  #   branches: ["main"]
 
 jobs:
   build:
