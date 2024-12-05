@@ -45,7 +45,7 @@ jobs:
     - name: commits
       run: |
         git config --global user.email "geometryweb007@gmail.com"
-        git config --global user.name "geometry"
+        git config --global user.name "geometryweb"
         git add data.csv
         git commit -m "뉴스데이터 수집"
     #푸쉬
@@ -54,4 +54,4 @@ jobs:
       with :
         branch : "main"
         github_token : $
-    
+
